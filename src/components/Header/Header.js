@@ -34,9 +34,9 @@ const Header = () => {
       <div className="header__right">
         <HeaderOptions Icon={HomeIcon} title="Home" />
         <HeaderOptions Icon={SupervisorAccountIcon} title="My Network" />
-        <HeaderOptions Icon={BusinessCenterIcon} title="My Network" />
-        <HeaderOptions Icon={ChatIcon} title="My Network" />
-        <HeaderOptions Icon={NotificationsIcon} title="My Network" />
+        <HeaderOptions Icon={BusinessCenterIcon} title="Jobs" />
+        <HeaderOptions Icon={ChatIcon} title="Messaging" />
+        <HeaderOptions Icon={NotificationsIcon} title="Notifications" />
         <HeaderOptions
           avatar="https://lh3.googleusercontent.com/ogw/ADGmqu8tbzl1ZElnBhCLLdKSi2JwfaB7EgMVen3gISreuA=s64-c-mo"
           title="Me"
