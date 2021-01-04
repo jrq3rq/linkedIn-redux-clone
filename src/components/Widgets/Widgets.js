@@ -1,10 +1,33 @@
 import React from "react";
+import "./WidgetsElements.css";
+import InfoIcon from "@material-ui/icons/Info";
+import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
 
 const Widgets = () => {
+  const newsArticles = (heading, subtitle) => (
+    <div className="widgets__article">
+      <div className="widgets__articleLeft">
+        <FiberManualRecordIcon />
+      </div>
+      <div className="widgets__articleRight">
+        <h4>{heading}</h4>
+        <p>{subtitle}</p>
+      </div>
+    </div>
+  );
   return (
-    <>
-      <h1>Widgets</h1>
-    </>
+    <div className="widgets">
+      <div className="widgets__header">
+        <h2>LinkedIn News</h2>
+        <InfoIcon />
+      </div>
+      {newsArticles("headline news", "Top news - 14444 readers")}
+      {newsArticles("headline news", "Top news - 14444 readers")}
+      {newsArticles("headline news", "Top news - 14444 readers")}
+      {newsArticles("headline news", "Top news - 14444 readers")}
+      {newsArticles("headline news", "Top news - 14444 readers")}
+      {newsArticles("headline news", "Top news - 14444 readers")}
+    </div>
   );
 };
 
