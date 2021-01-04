@@ -21,9 +21,11 @@ const Sidebar = () => {
           src="https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero.jpg"
           alt=""
         />
-        <Avatar className="sidebar__avatar" />
-        <h2>My Name here</h2>
-        <h4>email_address@gmail.com</h4>
+        <Avatar src={user.photoUrl} className="sidebar__avatar">
+          {user.email[0]}
+        </Avatar>
+        <h2>{user.diplayName}</h2>
+        <h4>{user.email}</h4>
       </div>
       <div className="sidebar__stats">
         <div className="sidebar__stat">
