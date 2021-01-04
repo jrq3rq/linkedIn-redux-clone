@@ -1,8 +1,12 @@
 import React from "react";
 import "./SidebarElements.css";
 import { Avatar } from "@material-ui/core";
+import { selectUser } from "../../features/userSlice";
+import { useSelector } from "react-redux";
 
 const Sidebar = () => {
+  const user = useSelector(selectUser);
+
   const recentItem = (topic) => (
     <div className="sidebar__recentItem">
       <span className="sidebar__hash">#</span>
